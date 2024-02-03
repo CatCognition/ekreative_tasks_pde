@@ -1,0 +1,43 @@
+.mini-player {
+    align-items: center;
+    background-color: #33333338;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .play-pause {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .play-pause.playing {
+    background-color: #ffffff4f;
+  }
+  
+  .volume-slider {
+    margin: 0 10px;
+    width: 80px;
+  }
+  
+  .mute-button {
+    background-color: #a7282886;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mute-button:hover {
+    background-color: #eecb6a;
+  }
+  

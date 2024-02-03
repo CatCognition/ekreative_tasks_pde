@@ -1,0 +1,82 @@
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .color-item {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border: 2px solid transparent; 
+  }
+  
+  .color-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  .copy-text {
+    display: none;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .color-item:hover .copy-text {
+    display: block;
+  }
+  
+  .label-select {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .label-select label {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .select-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .select-container select {
+    appearance: none;
+    font-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .select-container::after {
+    content: '▼';
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .select-container:hover select {
+    background-color: #2980b9;
+  }
+
+  .select-container select option {
+    background-color: #3498db;
+    color: #fff;
+  }

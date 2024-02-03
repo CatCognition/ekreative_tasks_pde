@@ -1,0 +1,159 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4f2fb;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.5s ease;
+    position: relative; 
+    min-height: 100vh;
+}
+
+header {
+    background-color: #00042d;
+    color: #ffffff;
+    padding: 1em 0;
+    transition: background-color 0.5s ease;
+    border-bottom: 5px solid #eecb6a;
+}
+
+footer {
+    height: auto;
+    background-color: #00042d;
+    color: #ffffff;
+    padding: 1em 0;
+    width: 100%;
+    clear: both;
+    transition: background-color 0.5s ease;
+    border-top: 5px solid #eecb6a;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #eecb6a;
+    color: #00042d;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+#scroll-to-top:hover {
+    background-color: #00042d;
+    color: #eecb6a;
+}
+
+#scroll-to-top.visible {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.copyable {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .copyable.copied {
+    background-color: #eecb6a;
+  }
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #eecb6a;
+    transform: scale(1.1);
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #00042d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease, transform 0.3s ease;
+    border: 5px solid #eecb6a;
+    border-radius: 10px;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2, h3 {
+    color: #ffffff;
+}
+
+a {
+    color: #eecb6a;
+}
+
+p {
+    line-height: 1.6;
+}
+
+span {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.copied {
+    background-color: #eecb6a;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.service-item,
+.clients-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #eecb6a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover,
+.clients-item:hover {
+    transform: scale(1.05);
+}
+
+.youtube-video {
+    margin-top: 20px;
+}
+
+.youtube-video iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 20px 0;
+}
